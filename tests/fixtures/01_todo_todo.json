@@ -1,0 +1,4 @@
+[
+	{"id":2,"name":"inactive","slug":"inactive","is_active":false,"content":"","up_vote": 0,"down_vote":0}, 
+  {"id":4,"name":"Find a life purpose","slug":"purpose","is_active":true,"content":"or just watch some netflix and chill","up_vote": 1,"down_vote":2}
+]
