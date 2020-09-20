@@ -2,7 +2,7 @@ import mock
 
 from aiohttp.test_utils import unittest_run_loop
 from aiohttp_boilerplate.sql import consts as sql_consts
-from aiohttp_boilerplate.tests import UnitTestCase
+from aiohttp_boilerplate.test_utils import UnitTestCase
 
 
 class DetailCase(UnitTestCase):
@@ -53,4 +53,4 @@ class DetailCase(UnitTestCase):
                 data=dataPost,
             )
 
-            assert status == 200
+            assert status == 201

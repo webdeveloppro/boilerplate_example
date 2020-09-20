@@ -2,7 +2,7 @@ import mock
 
 from aiohttp.test_utils import unittest_run_loop
 from aiohttp_boilerplate.sql import consts as sql_consts
-from aiohttp_boilerplate.tests import UnitTestCase
+from aiohttp_boilerplate.test_utils import UnitTestCase
 
 
 class DetailCase(UnitTestCase):
@@ -26,7 +26,7 @@ class DetailCase(UnitTestCase):
             )
 
             mSelect.assert_called_once_with(
-                'UPDATE todo_todo set up_vote=up_vote+1 where id=$1',
+                'UPDATE todo_todo as t0  set up_vote=up_vote+1 where id=$1',
                 {'id': 2},
                 sql_consts.FETCHVAL,
             )
@@ -49,7 +49,7 @@ class DetailCase(UnitTestCase):
             )
 
             mSelect.assert_called_once_with(
-                'UPDATE todo_todo set up_vote=up_vote-1 where id=$1',
+                'UPDATE todo_todo as t0  set up_vote=up_vote-1 where id=$1',
                 {'id': 2},
                 sql_consts.FETCHVAL,
             )

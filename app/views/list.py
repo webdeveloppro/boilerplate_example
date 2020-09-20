@@ -15,4 +15,4 @@ class ToDoList(ListView):
     async def before_get(self):
         self.where = 'is_active={active}'
         self.params['active'] = True
-        self.order = '"id" desc'
+        self.order = 't0.id desc'

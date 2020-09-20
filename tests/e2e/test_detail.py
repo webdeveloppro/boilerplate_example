@@ -1,7 +1,7 @@
 import json
 
 from aiohttp.test_utils import unittest_run_loop
-from aiohttp_boilerplate.tests import E2ETestCase
+from aiohttp_boilerplate.test_utils import E2ETestCase
 
 from app.schemas import ToDoDetailSchema
 

@@ -8,6 +8,7 @@
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
+.vscode
 
 # workspace files are user-specific
 *.sublime-workspace
@@ -97,8 +98,9 @@ temp/
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-env/*
+venv/*
 *.orig
+.env
 env.myvar
 .cache
 .pytest_cache

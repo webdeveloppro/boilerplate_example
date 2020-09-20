@@ -1,1 +1,1 @@
--r aiohttp_boilerplate/requirements.txt
+-e git+https://github.com/webdeveloppro/aiohttp_boilerplate#egg=aiohttp_boilerplate

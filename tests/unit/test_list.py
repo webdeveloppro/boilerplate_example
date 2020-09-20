@@ -1,7 +1,7 @@
 import mock
 
 from aiohttp.test_utils import unittest_run_loop
-from aiohttp_boilerplate.tests import UnitTestCase
+from aiohttp_boilerplate.test_utils import UnitTestCase
 
 
 class ListCase(UnitTestCase):
@@ -32,10 +32,11 @@ class ListCase(UnitTestCase):
 
             mSelect.assert_called_once_with(
                 **{
-                    'fields': '*',
+                    'fields': 't0.down_vote as t0__down_vote,t0.id as t0__id,t0.name as t0__name,t0.up_vote as t0__up_vote',
                     'where': 'is_active={active}',
                     'limit': 50,
-                    'order': '"id" desc',
+                    'order': 't0.id desc',
+                    'offset': None,
                     'params': {'active': True},
                     'many': True
                 }

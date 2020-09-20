@@ -1,0 +1,10 @@
+mock
+pyre-check
+pytest-aiohttp
+pytest-cov
+pytest-mock
+pytest-sugar
+pytest-timeout
+pytest
+python-dateutil
+pylint
